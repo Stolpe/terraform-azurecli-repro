@@ -10,11 +10,12 @@ terraform {
 provider "azurerm" {
   features {}
 
-  subscription_id = "subscriptionid_1"
+  subscription_id            = "subscriptionid_1"
+  skip_provider_registration = true
 }
 
 resource "azurerm_resource_group" "resource_group" {
-  name = "TestResourceGroup2"
+  name     = "TestResourceGroup2"
   location = "West Europe"
 }
 
