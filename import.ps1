@@ -1,0 +1,4 @@
+terraform import azurerm_resource_group.test_resource_group /subscriptions/subscriptionid_1/resourceGroups/TestResourceGroup
+terraform import azurerm_resource_group.prod_resource_group /subscriptions/subscriptionid_2/resourceGroups/ProdResourceGroup
+terraform import module.test_module.azurerm_resource_group.resource_group /subscriptions/subscriptionid_1/resourceGroups/TestResourceGroup2
+terraform import module.test_module.module.prod_module.azurerm_resource_group.resource_group /subscriptions/subscriptionid_2/resourceGroups/ProdResourceGroup2
